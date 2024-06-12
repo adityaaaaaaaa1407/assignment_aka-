@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Toast from "./Toast";
 
 function Form() {
   const [allowed, setAllowed] = useState(true);
   const [showToast, setShowToast] = useState(false);
-  const handleSubmit = (event: { preventDefault: () => void }) => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setShowToast(true);
+    if (formRef.current) formRef.current.reset();
   };
   return (
     <div className="grid sm:grid-cols-2 gap-10 mx-12">
@@ -28,7 +31,12 @@ function Form() {
       <div>
         <div className="text-[#969696]">
           Fill out the form to get a free consultation
-          <form id="form" autoComplete="off" onSubmit={handleSubmit}>
+          <form
+            id="form"
+            autoComplete="off"
+            onSubmit={handleSubmit}
+            ref={formRef}
+          >
             <div className="grid sm:grid-cols-2 ">
               <div className="bg-gray-100  ">
                 <div className="  mb-10 mt-10 ">
@@ -106,13 +114,19 @@ function Form() {
                   />
                 </div>
                 <div>
-                  <input
+                  {/* <input
                     className='bg-black w-36 h-45px text-white text-sm font-normal py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                   Submit'
                     type="submit"
                     value="Submit"
                     disabled={allowed}
-                  />
+                  /> */}
+                  <button
+                    type="submit"
+                    className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  >
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>
