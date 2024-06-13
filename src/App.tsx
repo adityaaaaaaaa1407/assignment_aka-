@@ -10,37 +10,39 @@ function App() {
     <>
       <div className="max-container max-h-screen ">
         <div>
-          <div className="w-full h-20 flex mb-20">
-            <div className=" h-40 w-40 m-10 ">
-              <img src="../src/assets/Laser Technologies Logo.png" alt="" />
+          <div className="w-full h-20 flex  sm:pt-8 pt-4 pl-4">
+            <div className=" h-60 w-60  ">
+              <img src="../src/assets/laserLogo.png" alt="" />
             </div>
           </div>
-          <div>
+          <section className="pt-12 pr-8 pl-8 pb-12">
             <Form />
-          </div>
-          <div className="mt-24">
+          </section>
+          <section className="pt-12  pb-12">
             <Map />
-          </div>
-          <div className="mb-12">
+          </section>
+          <section className="pt-12 pr-8 pl-8 pb-12">
             <CardsSection />
-          </div>
-          <div className="relative ">
-            <div className=" mb-32 ">
+          </section>
+          <section className="relative ">
+            <div className="relative  ">
               <Footer />
-            </div>
-            <div
-              className="flex justify-center items-center  bg-red-600 p-6 
-              sm:w-[1170px]  w-96 sm:ml-20 ml-8
-          shadow-lg absolute   bottom-48  rounded-tr-md rounded-bl-md rounded-tl-4xl  rounded-br-4xl "
-            >
-              <Newsletter />
-            </div>
-            <div className="w-full  flex justify-end bg-black ">
-              <div className="  mt-24 mr-20 mb-20 text-2xl ml-4">
-                <img src="../src/assets/laserLogo.png" alt="" />
+              <div className="pl-28">
+                <div
+                  className="flex flex-1  bg-red-600 p-6 
+              sm:w-auto w-[356px] shadow-lg absolute bottom-64 rounded-tr-md rounded-bl-md rounded-tl-4xl  rounded-br-4xl "
+                >
+                  <Newsletter />
+                </div>
+              </div>
+
+              <div className="w-full flex justify-end bg-black ">
+                <div className="  mt-24 mr-20 mb-20 text-2xl ml-4">
+                  <img src="../src/assets/Group.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </>

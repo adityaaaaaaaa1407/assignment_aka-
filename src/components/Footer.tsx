@@ -2,7 +2,7 @@ import { EnquiryData } from "../data/data";
 
 const Footer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pb-24">
       <div>
         <div className="">
           <div className="text-3xl font-bold flex justify-center sm:mb-24 mb-12">
