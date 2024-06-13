@@ -8,7 +8,7 @@ import Newsletter from "./components/Newsletter";
 function App() {
   return (
     <>
-      <div className="max-w-screen h-screen ">
+      <div className="max-container max-h-screen ">
         <div>
           <div className="w-full h-20 flex mb-20">
             <div className=" h-40 w-40 m-10 ">

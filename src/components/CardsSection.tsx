@@ -2,7 +2,7 @@ import { cardsData } from "../data/data";
 
 const CardsSection = () => {
   return (
-    <div className="flex flex-1 sm:justify-evenly  ">
+    <div className="flex flex-1 sm:justify-evenly w-full ">
       <div className="grid sm:grid-cols-3 grid-cols-1 sm:space-x-10  sm:m-0 mx-24">
         {cardsData.map((card) => (
           <div

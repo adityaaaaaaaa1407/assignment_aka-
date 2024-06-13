@@ -3,7 +3,7 @@ import logoForMap from "../assets/google map.png";
 const Map = () => {
   return (
     <div>
-      <div className="relative h-screen max-w-screen">
+      <div className="relative h-screen w-full">
         <iframe
           title="Google Map"
           className="absolute top-0 left-0 w-full h-[638px]"
