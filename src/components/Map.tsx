@@ -12,7 +12,7 @@ const Map = () => {
         ></iframe>
         <div
           className="absolute  top-32 rounded-tr-md rounded-bl-md  rounded-tl-5xl  rounded-br-5xl left-20 bg-black bg-opacity-75 text-white p-10 rounded-lg h-[340px] 
-          sm:w-[500px] w-80 "
+          sm:w-96 w-80"
         >
           <h1 className="sm:text-3xl text-2xl font-bold mb-4  underline underline-offset-8 text-nowrap">
             Headquarters office

@@ -16,7 +16,7 @@ function Form() {
     <div className="grid sm:grid-cols-2 gap-10 mx-12">
       <div
         className="sm:h-[200px] h-[
-         151px] sm:w-[500px] w-[340px] bg-slate-950 p-10 rounded-tr-md rounded-bl-md  rounded-tl-5xl  rounded-br-5xl sm:mt-14 sm:ml-12"
+         151px] sm:w-96 w-80 bg-slate-950 p-10 rounded-tr-md rounded-bl-md  rounded-tl-5xl  rounded-br-5xl sm:mt-14 sm:ml-12"
       >
         <div
           className="text-4xl text-white font-sans font-semibold mb-4

@@ -27,10 +27,10 @@ function App() {
           <section className="relative ">
             <div className="relative  ">
               <Footer />
-              <div className="pl-28">
+              <div className="md:pl-28 pl-6 md:pt-2 pt-10 ">
                 <div
                   className="flex flex-1  bg-red-600 p-6 
-              sm:w-auto w-[356px] shadow-lg absolute bottom-64 rounded-tr-md rounded-bl-md rounded-tl-4xl  rounded-br-4xl "
+              md:w-auto w-96 shadow-lg absolute md:bottom-64 bottom-52 rounded-tr-md rounded-bl-md rounded-tl-4xl  rounded-br-4xl "
                 >
                   <Newsletter />
                 </div>
